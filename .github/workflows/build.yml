@@ -42,7 +42,7 @@ jobs:
       - name: Build Website 🔨
         run: yarn build:website
         env:
-          DEPLOY_PRIME_URL: https://rohit-gohri.github.io/
+          DEPLOY_PRIME_URL: https://adriancollins.github.io/
           DEPLOY_BASE_URL: /redocusaurus/
 
       - name: Upload artifact
@@ -107,6 +107,6 @@ jobs:
             This pull request is automatically built and it is testable by installing [redocusaurus@v${{ env.package_version }}](https://www.npmjs.com/package/redocusaurus/v/${{ env.package_version }}).
 
 
-            For commit [${{ github.sha }}](https://github.com/rohit-gohri/redocusaurus/commit/${{ github.sha }}).
+            For commit [${{ github.sha }}](https://github.com/adriancollins/redocusaurus/commit/${{ github.sha }}).
           comment_tag: 'automatically-publish'
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
